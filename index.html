@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		
+		<meta charset="utf-8"> <!-- кодировка -->
+		<title> Тестовое задание. Форма авторизации </title> <!-- название страницы/вкладки в браузере. всплывающая подсказка -->
+		<link rel="stylesheet" href="style.css" type="text/css"> <!-- подключение стилей css из внешнего файла -->
+	</head>
+	
+	<body>
+	
+	<div class="container">
+		<img src="img/person.png"> <!-- подключение изображения иконки пользователя из директории img -->
+	
+		<form> <!-- создание формы -->
+		
+		<div class="dws-input"> <!-- поле для ввода e-mail -->
+			<input type="e-mail" pattern="Введите ваш e-mail" name="e-mail" required placeholder="Введите e-mail" title="Введите ваш e-mail">
+		</div>
+		<div class="dws-input"> <!-- поле для ввода пароля -->
+			<input type="password" pattern="(?=^.{6,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*" maxlength="16" name="password" required placeholder="Введите пароль" title="Введите ваш пароль">
+		</div>	
+			<input class="dws-submit" type="submit" name="submit" value="Авторизоваться"> <!-- кнопка авторизации" -->
+			<br>
+			<a href="#">Восстановить пароль</a> <!-- просто добавление ссылки для восстановления пароля -->
+		
+		</div>
+		
+		</form>
+		
+	</div>
+	<br>
+	<div align="center" id="doc_time"></div><!-- дата и время -->
+	
+	<script src="script.js"></script> <!-- подключение скрипта js из внешнего файла -->
+
+	</body>
+</html>
